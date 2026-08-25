@@ -1,0 +1,29 @@
+.cabecalho {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D0D0D
+}
+
+.logo {
+    color: #C8A96B;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0,3s;
+}
+
+nav a:hover {
+    color: #C8A96B;
+}
