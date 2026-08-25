@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #inicio {
+        min-height: calc(100vh - 100px);
+        padding: 40px 25px;
+        background-position: center;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-conteudo p:first-child {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    #inicio h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    #inicio h1 span{
+        display: block;
+    }
+
+    #inicio p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #inicio a {
+        padding: 14px 25px;
+    }
+}
