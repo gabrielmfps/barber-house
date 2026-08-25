@@ -1,0 +1,64 @@
+#servicos {
+    background-color: #0D0D0D;
+    padding: 100px 8%;
+}
+
+.servicos-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servicos-header p {
+    color: #C8A96B;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.servicos-header h2 {
+    color: #ffffff;
+    font-size: 14px;
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+.servicos-header span {
+    color: #A3A3A3;
+    font-size: 16px;
+}
+
+.servicos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1rf);
+    gap: 20px;
+}
+
+.servico-card {
+    padding: 35px 25px;
+    border: 1px solid #292929;
+    transition: 0.3s;
+}
+
+.servico-card:hover {
+    border-color: #C8A96B;
+    transform: translateY(-5px);
+}
+
+.servico-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.servico-card p {
+    color: #A3A3A3;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.servico-card strong {
+    color: #C8A96B;
+    font-size: 20px;
+}
