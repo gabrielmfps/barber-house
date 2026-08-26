@@ -10,17 +10,24 @@
 
 .servicos-header p {
     color: #C8A96B;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 3px;
     margin-bottom: 15px;
 }
 
 .servicos-header h2 {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 34px;
     max-width: 700px;
     margin: 0 auto 15px;
 }
+
+.servico-icone {
+    color: #C8A96B;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
 .servicos-header span {
     color: #A3A3A3;
     font-size: 16px;
@@ -30,7 +37,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1rf);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 

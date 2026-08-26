@@ -48,4 +48,35 @@
     #inicio a {
         padding: 14px 25px;
     }
+
+    #servicos {
+        padding: 80px 5%;
+    }
+
+    .servicos-header {
+        margin-bottom: 40px;
+    }
+
+    .servicos-header h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .servicos-header span {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .servico-card {
+        padding: 30px 25px;
+    }
+
+    .servico-card p {
+        font-size: 15px;
+    }
 }
