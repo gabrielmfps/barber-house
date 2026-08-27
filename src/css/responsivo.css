@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+
+    /* HEADER */
+
     .cabecalho {
         padding: 20px;
         flex-direction: column;
@@ -14,6 +17,8 @@
     nav a {
         font-size: 14px;
     }
+
+    /* HERO */
 
     #inicio {
         min-height: calc(100vh - 100px);
@@ -49,6 +54,8 @@
         padding: 14px 25px;
     }
 
+     /* SERVIÇO  */
+
     #servicos {
         padding: 80px 5%;
     }
@@ -78,5 +85,113 @@
 
     .servico-card p {
         font-size: 15px;
+    }
+
+    /* SOBRE */
+
+    #sobre {
+        min-height: auto;
+        padding: 80px 5%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sobre-imagem img {
+        height: 350px;
+    }
+
+    .sobre-conteudo {
+        max-width: 100%;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .sobre-conteudo span {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* GALERIA */
+
+    #galeria {
+        padding: 80px 5%;
+    }
+
+    .galeria-header {
+        margin-bottom: 40px;
+    }
+
+    .galeria-header h2 {
+        font-size: 34px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .galeria-grid img {
+        height: 280px;
+    }
+
+    /* CONTATO */
+
+    .rodape {
+        padding: 60px 5% 20px;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .rodape-logo {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    #galeria {
+        padding: 70px 5%;
+    }
+
+    .galeria-header {
+        margin-bottom: 30px;
+    }
+
+    .galeria-header p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .galeria-header h2 {
+        font-size: 28px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .galeria-grid img {
+        height: 300px;
+    }
+
+    /* CONTATO */
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .rodape-logo {
+        grid-column: auto;
+    }
+
+    .rodape-final {
+        margin-top: 40px;
     }
 }
