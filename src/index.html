@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/Servicos.css">
     <link rel="stylesheet" href="./css/Sobre.css">
     <link rel="stylesheet" href="./css/Galeria.css">
+    <link rel="stylesheet" href="./css/Agendamento.css">
     <link rel="stylesheet" href="./css/Footer.css">
     <link rel="stylesheet" href="./css/Responsivo.css">
 </head>
@@ -42,7 +43,7 @@
 
                 <p>cortes clássicos e modernos para quem valoriza estilo e personalidade.</p>
 
-                <a href="#contado">
+                <a href="#contato">
                     Agendar horário
                 </a>
             </div>
@@ -143,7 +144,69 @@
             </div>
         </section>
 
-        <footer class="">
+        <section id="agendamento" class="agendamento">
+            <div class="agendamento-header">
+                <p>AGENDE SEU HORÁRIO</p>
+
+                <h2>
+                    Seu próximo corte começa aqui.
+                </h2>
+
+                <span>
+                    Escolha o serviço, a data e o horário desejado.
+                </span>
+            </div>
+
+            <form id="form-agendamento">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="servico">Serviço</label>
+
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Corte Masculino">Corte Masculino</option>
+                        <option value="Corte + Barba">Corte + Barba</option>
+                        <option value="Barba">Barba</option>
+                        <option value="Acabamento">Acabamento</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data</label>
+
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horário</label>
+
+                    <select id="horario" name="horario" required>
+                        <option value="">Selecione um horário</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    Solicitar agendamento
+                </button>
+            </form>
+
+
+        </section>
+
+        <footer class="" id="contato">
             <div class="rodape-conteudo">
                 <div class="rodape-logo">
                     <h2>BARBER HOUSE</h2>
@@ -171,5 +234,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

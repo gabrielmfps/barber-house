@@ -41,7 +41,7 @@
         line-height: 1.1;
     }
 
-    #inicio h1 span{
+    #inicio h1 span {
         display: block;
     }
 
@@ -54,7 +54,7 @@
         padding: 14px 25px;
     }
 
-     /* SERVIÇO  */
+    /* SERVIÇO  */
 
     #servicos {
         padding: 80px 5%;
@@ -151,6 +151,29 @@
     .rodape-logo {
         grid-column: 1 / -1;
     }
+
+    /* AGENDAMENTO */
+
+    #agendamento {
+        padding: 80px 5%;
+    }
+
+    .agendamento-header {
+        margin-bottom: 40px;
+    }
+
+    .agendamento-header h2 {
+        font-size: 34px;
+    }
+
+    #form-agendamento {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #form-agendamento button {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -193,5 +216,43 @@
 
     .rodape-final {
         margin-top: 40px;
+    }
+
+    /* AGENDAMENTO */
+
+    #agendamento {
+        padding: 70px 5%;
+    }
+
+    .agendamento-header {
+        margin-bottom: 35px;
+    }
+
+    .agendamento-header p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .agendamento-header h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .agendamento-header span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    #form-agendamento {
+        gap: 18px;
+    }
+
+    .campo input,
+    .campo select {
+        padding: 13px;
+    }
+
+    #form-agendamento button {
+        padding: 14px;
     }
 }
