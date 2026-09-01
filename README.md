@@ -6,6 +6,7 @@ Landing page para uma barbearia moderna e elegante.
 
 - HTML5
 - CSS3
+- JS
 
 ## 📌 Projeto
 
