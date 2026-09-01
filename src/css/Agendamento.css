@@ -76,3 +76,7 @@
 
     transition: 0.3s;
 }
+
+#form-agendamento button:hover {
+    background-color: #E0C48A;
+}

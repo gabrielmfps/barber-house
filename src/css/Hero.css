@@ -9,7 +9,7 @@
         url("../images/macroodry-machine-8254053_1920.jpg") center / cover;
 }
 
-#inicio p:first-child {
+#inicio .hero-destaque {
     color: #C8A96B;
     font-size: 14px;
     letter-spacing: 3px;

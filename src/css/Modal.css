@@ -1,0 +1,149 @@
+.modal-confirmacao {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    width: 100%;
+    max-width: 450px;
+
+    background: #0D0D0D;
+
+    padding: 30px;
+
+    border: 1px solid #C8A96B;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.modal-conteudo h2 {
+    color: #C8A96B;
+    margin-bottom: 20px;
+}
+
+.resumo-agendamento {
+    margin: 20px 0;
+
+    padding: 15px;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.resumo-agendamento p {
+    margin: 10px 0;
+}
+
+.resumo-agendamento strong {
+    color: #C8A96B;
+}
+
+.modal-botoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.modal-botoes button {
+    flex: 1;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn-cancelar {
+    background: #333;
+    color: #fff;
+}
+
+#btn-cancelar:hover {
+    background: #444;
+}
+
+#btn-confirmar {
+    background: #C8A96B;
+    color: #0D0D0D;
+}
+
+#btn-confirmar:hover {
+    background: #E0C48A;
+}
+
+/* MODAL AVISO */
+
+.modal-aviso {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal-aviso .modal-conteudo {
+    width: 100%;
+    max-width: 450px;
+
+    background: #0D0D0D;
+
+    padding: 30px;
+
+    border: 1px solid #C8A96B;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.modal-aviso h2 {
+    color: #C8A96B;
+    margin-bottom: 20px;
+}
+
+.modal-aviso p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#btn-fechar-aviso {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #C8A96B;
+    color: #0D0D0D;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#btn-fechar-aviso:hover {
+    background: #E0C48A;
+}

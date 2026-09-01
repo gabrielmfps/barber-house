@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber-House</title>
+    <title>Barber-House</title>
+
+<link rel="icon" type="image/png" href="./images/favicon2.png">
     <link rel="stylesheet" href="./css/Style.css">
     <link rel="stylesheet" href="./css/Header.css">
     <link rel="stylesheet" href="./css/Hero.css">
@@ -13,16 +16,17 @@
     <link rel="stylesheet" href="./css/Galeria.css">
     <link rel="stylesheet" href="./css/Agendamento.css">
     <link rel="stylesheet" href="./css/Footer.css">
+    <link rel="stylesheet" href="./css/Modal.css">
     <link rel="stylesheet" href="./css/Responsivo.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="logo">
+        <a href="#inicio" class="logo">
             BARBER HOUSE
-        </div>
+        </a>
 
-        <nav>
+        <nav aria-label="Navegação principal">
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
             <a href="#sobre">Sobre</a>
@@ -35,7 +39,7 @@
     <main>
         <section id="inicio">
             <div class="hero-conteudo">
-                <p>ESTILO • PRECISÃO • TRADIÇÃO</p>
+                <p class="hero-destaque">ESTILO • PRECISÃO • TRADIÇÃO</p>
 
                 <h1>
                     Seu estilo começa <span>aqui.</span>
@@ -43,7 +47,7 @@
 
                 <p>cortes clássicos e modernos para quem valoriza estilo e personalidade.</p>
 
-                <a href="#contato">
+                <a href="#agendamento">
                     Agendar horário
                 </a>
             </div>
@@ -159,7 +163,7 @@
 
             <form id="form-agendamento">
                 <div class="campo">
-                    <label for="nome">Nome</label>
+                    <label for="nome">Nome e Sobrenome</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 </div>
 
@@ -203,37 +207,94 @@
                 </button>
             </form>
 
+            <div class="modal-confirmacao" id="modal-confirmacao">
+
+                <div class="modal-conteudo">
+
+                    <h2>💈 BARBER HOUSE</h2>
+
+                    <p>Confira os dados do seu agendamento:</p>
+
+                    <div class="resumo-agendamento">
+
+                        <p>👤 <strong>Cliente:</strong> <span id="resumo-nome"></span></p>
+
+                        <p>✂️ <strong>Serviço:</strong> <span id="resumo-servico"></span></p>
+
+                        <p>📅 <strong>Data:</strong> <span id="resumo-data"></span></p>
+
+                        <p>🕐 <strong>Horário:</strong> <span id="resumo-horario"></span></p>
+
+                    </div>
+
+                    <p>Deseja enviar a solicitação?</p>
+
+                    <div class="modal-botoes">
+
+                        <button type="button" id="btn-cancelar">
+                            Cancelar
+                        </button>
+
+                        <button type="button" id="btn-confirmar">
+                            Confirmar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-aviso" id="modal-aviso">
+
+                <div class="modal-conteudo">
+
+                    <h2>💈 BARBER HOUSE</h2>
+
+                    <p id="mensagem-aviso"></p>
+
+                    <div class="modal-botoes">
+
+                        <button type="button" id="btn-fechar-aviso">
+                            Entendi
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
-
-        <footer class="" id="contato">
-            <div class="rodape-conteudo">
-                <div class="rodape-logo">
-                    <h2>BARBER HOUSE</h2>
-                    <p>
-                        Estilo, precisão e tradição em cada corte.
-                    </p>
-                </div>
-
-                <div class="rodape-links">
-                    <h3>NAVEGAÇÃO</h3>
-
-                    <a href="#inicio">Início</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#galeria">Galeria</a>
-                </div>
-
-                <div class="rodape-contato">
-                    <h3>CONTATO</h3>
-
-                    <p>🗺️ Sua cidade - SP</p>
-                    <p>📞 (11) 99999-9999</p>
-                    <p>✉ contato@barberhouse.com</p>
-                </div>
-            </div>
-        </footer>
     </main>
+
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <div class="rodape-logo">
+                <h2>BARBER HOUSE</h2>
+                <p>
+                    Estilo, precisão e tradição em cada corte.
+                </p>
+            </div>
+
+            <div class="rodape-links">
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Galeria</a>
+            </div>
+
+            <div class="rodape-contato">
+                <h3>CONTATO</h3>
+
+                <p>🗺️ Sua cidade - SP</p>
+                <p>📞 (11) 99999-9999</p>
+                <p>✉ contato@barberhouse.com</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
 </body>

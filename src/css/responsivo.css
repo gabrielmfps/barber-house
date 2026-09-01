@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
 
     /* HEADER */
@@ -173,6 +179,37 @@
 
     #form-agendamento button {
         grid-column: auto;
+    }
+
+    /* MODAL */
+
+    .modal-conteudo {
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+
+    .modal-conteudo h2 {
+        font-size: 22px;
+    }
+
+    .modal-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-botoes button {
+        width: 100%;
+    }
+
+    /* MODAL AVISO */
+
+        .modal-aviso .modal-conteudo {
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+
+    .modal-aviso h2 {
+        font-size: 22px;
     }
 }
 
